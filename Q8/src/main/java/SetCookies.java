@@ -42,7 +42,7 @@ public class SetCookies extends HttpServlet {
 			nm = "Type2-CookieNo-" + i;
 			val = "Type2-CookieVal-" + i;
 			ck = new Cookie(nm, val);
-			ck.setMaxAge(3600);
+			ck.setMaxAge(10);
 			response.addCookie(ck);
 		}
 		
